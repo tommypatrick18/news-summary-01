@@ -1,3 +1,3 @@
-# World News Summary: 11 November 2026
+# 2026 World News Summary Processor
 
-main.py is a Python 3 program using only the standard library; it reads summary.txt from its own directory and writes a byte-exact copy to entry.txt in the directory given by the MAKEFUN_OUTPUT_DIR environment variable (default /output). summary.txt is a 13-story summary of the world's news of Wednesday 11 November 2026, 1,990 characters. The entry is licensed under the MIT License.
+This repository contains main.py, a Python 3 program using only the standard library to read summary.txt from its own directory and write a byte-exact copy to entry.txt in the directory given by the MAKEFUN_OUTPUT_DIR environment variable (default /output). The file summary.txt is a 13-story summary of the world's news of Wednesday 11 November 2026 and contains 1,989 characters. The entry is licensed under the MIT License.
