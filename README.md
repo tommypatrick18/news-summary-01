@@ -1,2 +1,3 @@
-# Summary of Events: 11 November 2026
-main.py is a Python 3 program using only the standard library; it reads summary.txt from its own directory and writes a byte-exact copy to entry.txt in the directory given by the MAKEFUN_OUTPUT_DIR environment variable (default /output). summary.txt is a 12-story summary of the world's news of Wednesday 11 November 2026, 1,986 characters. The entry is licensed under the MIT License.
+# News Summary Utility
+
+This repository provides a Python 3 program, main.py, which uses only the standard library to read summary.txt from its local directory and write a byte-exact binary copy to entry.txt in the location specified by the MAKEFUN_OUTPUT_DIR environment variable, defaulting to /output. The summary.txt file contains a 1,972-character report covering twelve key global events from Wednesday, 11 November 2026, and the entire entry is provided under the MIT License.

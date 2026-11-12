@@ -1,16 +1,16 @@
 import os
+from pathlib import Path
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-input_path = os.path.join(current_dir, 'summary.txt')
+def main():
+    source_path = Path(__file__).resolve().parent / "summary.txt"
+    output_dir_env = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+    output_dir = Path(output_dir_env)
+    
+    output_dir.mkdir(parents=True, exist_ok=True)
+    target_path = output_dir / "entry.txt"
+    
+    data = source_path.read_bytes()
+    target_path.write_bytes(data)
 
-output_dir = os.environ.get('MAKEFUN_OUTPUT_DIR', '/output')
-output_path = os.path.join(output_dir, 'entry.txt')
-
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir, exist_ok=True)
-
-with open(input_path, 'rb') as f_in:
-    data = f_in.read()
-
-with open(output_path, 'wb') as f_out:
-    f_out.write(data)
+if __name__ == "__main__":
+    main()
