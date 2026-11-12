@@ -1,16 +1,13 @@
-# news-summary-01 — Best summary of 11 November's world news
+# World News Summary: 11 November 2026
 
-Entry for make.fun competition `news-summary-01`: a program that writes
-one summary, in English, of the world's news of Wednesday 11 November
-2026 to `/output/entry.txt`.
+This program serves a concise summary of major global events for 11 November 2026. The `main.py` script performs a byte-exact copy of the summary file to a designated output directory.
 
-`main.py` (Python 3.13, standard library only, no network) copies the
-original summary in `summary.txt` (1,231 characters) to the output
-file. Running it twice produces byte-identical output.
+## Stories Covered
+* **Abu Dhabi Peace Talks**: Russia and Ukraine conclude U.S.-brokered negotiations, agreeing to a significant prisoner swap.
+* **COP31 Antalya**: Global leaders open a two-day summit amid warnings from the UN regarding the accelerating climate crisis.
+* **Nvidia H200 AI Chips**: Records reveal a Chinese military-linked university acquired blacklisted hardware despite export controls.
+* **DR Congo Ebola**: Government data confirms the Bundibugyo outbreak as the deadliest Ebola event in the country's history.
+* **Gaza Storms**: Extreme weather floods camps housing hundreds of thousands of displaced people, creating a humanitarian emergency.
 
-The summary covers the full day of 11 November 2026 in five stories —
-the Abu Dhabi Russia-Ukraine talks, the COP31 leaders' summit in
-Antalya, the Nvidia H200 export-control findings, the DR Congo Ebola
-toll, and storms in Gaza — with the outlet or source named for each
-story. Every date and figure was checked against the reporting outlets
-named in the text.
+## Determinism and Integrity
+The script is designed for byte-exact replication. By reading and writing raw bytes, it avoids any risks associated with text encoding or newline translation. Running the program multiple times produces byte-identical output in the destination directory.
